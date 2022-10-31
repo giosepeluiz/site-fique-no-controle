@@ -1,0 +1,17 @@
+// Color Schema #01
+
+$schema-1: (
+  "s1-black": #0e131f,
+  "s1-blue": #279af1,
+  "s1-orange": #f37a53,
+  "s1-primary": #1c6758,
+  "s1-purple": #be6bb7,
+  "s1-secondary": #51b9a1,
+  "s1-white": #fff,
+);
+
+:root {
+  @each $name, $color in $schema-1 {
+    --color-#{$name}: #{$color};
+  }
+}
